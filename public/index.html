@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MyCaseBuilder</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <div id="nav" class="navbar navbar-default navbar-fixed-top">
+        <div class="menu" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <a style="margin-left: 20px; background: lightblue;" href="/">Save your design</a>
+        <h2 style="text-align: center;">MyCaseBuilder</h2>
+
+        <a style="margin-right: 180px; margin-top: -40px;  float: right;" href="/contact">LOGIN</a>
+        <a style="margin-right: 20px; margin-top: -40px;  float: right;" href="/contact">CREATE ACCOUNT</a>
+    </div>
+    <div id='inline'>
+        <div id="left">
+            <div class="tab">
+                <button class="tablinks" id="defaultOpen">Library</button>
+                <button class="tablinks">Photo Tracer</button>
+                <button class="tablinks">Rect</button>
+                <button class="tablinks">Circle</button>
+                <button class="tablinks">Draw</button>
+                <button class="tablinks">Settings</button>
+            </div>
+        </div>
+        <div id="middle">
+            <div id="container" style="border: 1px solid gray;">
+                <canvas id='myCanvas' class="myCanv"></canvas>
+            </div>
+        </div>
+        <div id='right'>
+            <div class="tab">
+                <button class="tablinks" id="defaultOpen">Properties Panel</button>
+                <input style="margin-left: 20px;" type="file" id="myfile" name="myfile"><br><br>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/index.js" async defer></script>
+    <script src="https://unpkg.com/konva@7.0.3/konva.min.js"></script>
+    <script src="https://unpkg.com/merge-images"></script>
+    <script src="https://www.marvinj.org/releases/marvinj-0.9.js"></script>
+</body>
+
+</html>
