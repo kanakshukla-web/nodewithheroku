@@ -25,6 +25,7 @@
         <a style="margin-right: 20px; margin-top: -40px;  float: right;" href="/contact">CREATE ACCOUNT</a>
     </div>
     <div id='inline'>
+
         <div id="left">
             <div class="tab">
                 <button class="tablinks" id="defaultOpen">Library</button>
@@ -35,15 +36,75 @@
                 <button class="tablinks">Settings</button>
             </div>
         </div>
+
         <div id="middle">
-            <div id="container" style="border: 1px solid gray;">
+            <canvas style="margin-left: 230px; margin-top: 70px;" id='myCanvas' width="835" height="520" class="myCanv">
+            </canvas>
+            <!-- <div id="container" style="border: 1px solid gray;">
                 <canvas id='myCanvas' class="myCanv"></canvas>
-            </div>
+            </div> -->
         </div>
+
         <div id='right'>
             <div class="tab">
                 <button class="tablinks" id="defaultOpen">Properties Panel</button>
                 <input style="margin-left: 20px;" type="file" id="myfile" name="myfile"><br><br>
+                <hr>
+                <div>
+                    <input id="shape_name" type="text" placeholder="Unnamed Shape" autocomplete="off"
+                        style="margin-left: 20px; width: 220px;" />
+                    <label style="margin-left: 20px;" for="">160mm X 89mm X 100mm</label>
+                </div>
+                <hr>
+                <div>
+                    <ul class="properties">
+                        <li><a>Clone</a></li>
+                        <li><a>Tools</a></li>
+                        <li><a>Align</a></li>
+                        <li><a>Delete</a></li>
+                    </ul>
+                </div>
+                <hr>
+                <div>
+                    <table style="margin-left: 20px;">
+                        <h3 style="margin-left: 20px;">Position</h3>
+                        <tr>
+                            <th>X</th>
+                            <th>Y</th>
+                            <th>Angle</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input id="x-axis" value="0" type="number" autocomplete="off" style="width: 50px;" />
+                            </td>
+                            <td>
+                                <input id="y-axis" value="0" type="number" autocomplete="off" style="width: 50px;" />
+                            </td>
+                            <td>
+                                <input id="angle" value="0" type="number" autocomplete="off" style="width: 50px;" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>Length</th>
+                            <th>Width</th>
+                            <th>Depth</th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input id="length" value="0" type="number" autocomplete="off" style="width: 50px;" />
+                            </td>
+                            <td>
+                                <input id="width" value="0" type="number" autocomplete="off" style="width: 50px;" />
+                            </td>
+                            <td>
+                                <input id="depth" value="0" type="number" autocomplete="off" style="width: 50px;" />
+                            </td>
+                        </tr>
+
+                    </table>
+                    <hr>
+                    <h3 style="margin-left: 20px;">Tray/Layer</h3>
+                </div>
             </div>
         </div>
     </div>
@@ -52,6 +113,7 @@
     <script src="https://unpkg.com/konva@7.0.3/konva.min.js"></script>
     <script src="https://unpkg.com/merge-images"></script>
     <script src="https://www.marvinj.org/releases/marvinj-0.9.js"></script>
+    <script src="http://code.createjs.com/createjs-2013.12.12.min.js"></script>
 </body>
 
 </html>
